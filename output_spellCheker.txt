@@ -1,0 +1,3 @@
+=========== RESTART: C:\projects\Python-Programming\spellCheker.py ===========
+misspelled Words
+['frmer', 'prabably', 'decidid', 'grw', 'kniw', 'hd', 'goe', 'aroudn', 'almosty', 'perserved', 'stoped', 'crzy', '10', 'undetered', 'alternatng', 'mich']
