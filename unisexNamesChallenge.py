@@ -1,4 +1,4 @@
-#!/usr/bin/python
+
 f= open("dq_unisex_names.csv", "r")
 data = f.read ()
 data_list=data.split("\n")
@@ -22,5 +22,6 @@ numerical_data[len(numerical_data)-1]
 thousand_or_greater =[]
 for row3 in numerical_data:
     if (row3[1] >= 1000):
-        thousand_or_greater.append(row[0])
+        thousand_or_greater.append(row3[0])
+print("thousand or greater")
 print(thousand_or_greater[0:10])
