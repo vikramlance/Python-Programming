@@ -2,6 +2,8 @@ import zipfile
 import os
 
 import os.path
+import sys
+import comtypes.client
 
 
 if (os.path.isfile("C:/projects/Python-Programming/temp.xml")):
@@ -59,4 +61,14 @@ newDocx.close()
 
 print("new document with replaced strings is available - C:/projects/Python-Programming/outputFile.docx") 
 
+wdFormatPDF = 17
 
+#in_file = os.path.abspath(sys.argv[1])
+#out_file = os.path.abspath(sys.argv[2])
+in_file = "C:/projects/Python-Programming/outputFile.docx" 
+out_file = "C:/projects/Python-Programming/outputFile.pdf" 
+word = comtypes.client.CreateObject('Word.Application')
+doc = word.Documents.Open(in_file)
+doc.SaveAs(out_file, FileFormat=wdFormatPDF)
+doc.Close()
+word.Quit()
