@@ -7,12 +7,16 @@ import comtypes.client
 
 
 if (os.path.isfile("C:/projects/Python-Programming/temp.xml")):
+    print("deleting old file - temp.xml")
     os.remove("C:/projects/Python-Programming/temp.xml")
     
+    
 if (os.path.isfile("C:/word/document.xml")):
+    print("deleting old file - document.xml")
     os.remove("C:/word/document.xml")
 
 if (os.path.isfile("C:/projects/Python-Programming/outputFile.docx")):
+    print("deleting old file - outputFile.docx")
     os.remove("C:/projects/Python-Programming/outputFile.docx")
 
 f= open("parameter.txt","r")
