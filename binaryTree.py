@@ -70,6 +70,9 @@ tree.add(8)
 tree.add(10)
 tree.add(13)
 tree.add(12)
+tree.add(123)
+tree.add(133)
+tree.add(125)
 tree.printTree()
 print (tree.find(3)).v
 
