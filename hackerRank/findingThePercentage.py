@@ -45,9 +45,10 @@ Three not there
 >> a
 {'two': 2}
 '''
-from decimal import Decimal, getcontext
 
-getcontext().prec = 3
+#from decimal import Decimal, getcontext
+
+#getcontext().prec = 3
 print 'enter the number of students'
 N= int(raw_input())
 print 'enter student marks'
