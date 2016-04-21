@@ -1,5 +1,29 @@
+'''
+Sample Input
+
+4
+-1
+10
+16
+18
+Sample Output
+
+Age is not valid, setting age to 0.
+You are young.
+You are young.
+
+You are young.
+You are a teenager.
+
+You are a teenager.
+You are old.
+
+You are old.
+You are old.
+'''
+
 class Person:
-    a=0
+    #a=0
     
     def __init__(self,initialAge):
         # Add some more code to run some checks on initialAge
@@ -9,19 +33,25 @@ class Person:
             print "Age is not valid, setting age to 0."
         else:
             self.initialAge = initialAge
+        
 
     def yearPasses(self):
         
         # Increment the age of the person in here
-        Person.a= Person.a + 1
-        self.m= Person.a+ self.initialAge
-        return m
+        #Person.a= Person.a + 1
+        #m= Person.a+ self.initialAge
+                
+        self.initialAge= 1 + self.initialAge
+        
+        
+        #print m
+        return self.initialAge
     
     def amIOld(self):
-        k=self.m
+        k=self.yearPasses()
         # Do some computations in here and print out the correct statement to the console
         if (k-1) < 13:
-            print k
+            #print k
             print "You are young."
         elif 13<= (k-1) <18:
             print "You are a teenager."
