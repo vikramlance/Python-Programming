@@ -1,4 +1,4 @@
-for i in range (0,6,2):
+for i in range (1):
     print i
 
 s="mart"
