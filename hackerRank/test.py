@@ -5,6 +5,9 @@ s="mart"
 p=list(s)
 print p
 m=[1,2,3]
+k=str(12343)
+print k[4]
+print len(k)
 print map(str, m)
 print m[0]
 
