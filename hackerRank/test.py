@@ -1,4 +1,8 @@
-for i in range (1):
+import math
+
+print (math.sqrt(4).is_integer())
+
+for i in  range(5,10):
     print i
 
 s="mart"
@@ -17,3 +21,10 @@ for i in range(5,-1,-1):
 for k in range(0,3):
     print k 
 
+'''
+    n,k = raw_input().strip().split(' ')
+    n,k = [int(n),int(k)]
+
+n = int(raw_input().strip())
+arr = map(int,raw_input().strip().split(' '))
+'''
