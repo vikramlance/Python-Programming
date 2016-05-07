@@ -1,5 +1,8 @@
 import math
 
+print 5/2
+print  int ('5' + '5')
+
 print (math.sqrt(4).is_integer())
 
 for i in  range(5,10):
