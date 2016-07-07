@@ -1,27 +1,36 @@
+a= list (raw_input())
 
-a=raw_input()
+for i in a:
+	k='False'
+	if i.isalnum():
+		k= 'True'
+		break
+print k
 
-if a.isalnum():
-    print "True"
-else:
-    print "False"
+for i in a:
+	k='False'
+	if i.isalpha():
+		k= 'True'
+		break
+print k	
 
-if a.isalnum() and not a.isdigit():
-    print "True"
-else:
-    print "False"
+for i in a:
+	k='False'
+	if i.isdigit():
+		k= 'True'
+		break
+print k	
 
-if a.isalnum() and not a.isalpha():
-    print "True"
-else:
-    print "False"
+for i in a:
+	k='False'
+	if i.islower():
+		k= 'True'
+		break
+print k	
 
-if (a.isalnum() and not (a.islower() and a.isupper() )) or (a.isalnum() and not (a.islower() and a.isupper() )) :
-    print "True"
-else:
-    print "False"
-
-if a.isupper():
-    print "True"
-else:
-    print "False"
+for i in a:
+	k='False'
+	if i.isupper():
+		k= 'True'
+		break
+print k	
