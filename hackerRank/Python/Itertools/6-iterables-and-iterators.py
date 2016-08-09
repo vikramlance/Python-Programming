@@ -1,4 +1,8 @@
 
+'''
+https://www.hackerrank.com/challenges/iterables-and-iterators
+'''
+
 from itertools import combinations
 
 a=raw_input()
