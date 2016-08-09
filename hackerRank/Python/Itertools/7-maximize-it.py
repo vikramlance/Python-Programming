@@ -1,3 +1,8 @@
+'''
+https://www.hackerrank.com/challenges/maximize-it
+'''
+
+
 from itertools import product
 
 k,m=raw_input().split()
