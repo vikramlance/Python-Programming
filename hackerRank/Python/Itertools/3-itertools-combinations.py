@@ -1,3 +1,10 @@
+'''
+
+itertools.combinations(iterable, r) 
+https://www.hackerrank.com/challenges/itertools-combinations
+
+'''
+
 from itertools import combinations
 
 a=raw_input().split()
