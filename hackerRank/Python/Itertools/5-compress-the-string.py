@@ -1,3 +1,7 @@
+'''
+https://www.hackerrank.com/challenges/compress-the-string
+'''
+
 from itertools import groupby
 data=list(raw_input())
 
