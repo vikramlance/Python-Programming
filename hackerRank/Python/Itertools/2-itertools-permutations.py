@@ -1,3 +1,8 @@
+'''
+itertools.permutations(iterable[, r])
+https://www.hackerrank.com/challenges/itertools-permutations
+'''
+
 from itertools import permutations
 
 a=raw_input().split()
