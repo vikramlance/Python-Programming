@@ -1,3 +1,9 @@
+'''
+itertools.combinations_with_replacement(iterable, r) 
+https://www.hackerrank.com/challenges/itertools-combinations-with-replacement
+
+'''
+
 from itertools import combinations_with_replacement
 
 
