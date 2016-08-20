@@ -1,3 +1,7 @@
+'''
+
+https://www.hackerrank.com/challenges/py-introduction-to-sets
+'''
 
 k=raw_input()
 a=set(map (int, (raw_input().split(' '))))
