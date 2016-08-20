@@ -1,3 +1,7 @@
+'''
+https://www.hackerrank.com/challenges/no-idea
+'''
+
 p=raw_input()
 q=map (int, (raw_input().strip().split(' ')))
 
