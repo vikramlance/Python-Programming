@@ -1,3 +1,8 @@
+
+'''
+https://www.hackerrank.com/challenges/py-set-discard-remove-pop
+'''
+
 n = input()
 s = set(map(int, raw_input().split())) 
 N= int(raw_input())
