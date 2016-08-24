@@ -1,3 +1,7 @@
+'''
+https://www.hackerrank.com/challenges/py-the-captains-room
+'''
+
 import collections
 a=raw_input().strip()
 b=list(raw_input().split())
