@@ -2,7 +2,10 @@
 https://www.hackerrank.com/challenges/calendar-module
 '''
 
+import datetime
 
-m,d,y=raw_input().split()
+k=raw_input()
 
-import calendar
+p= datetime.datetime.strptime(k, '%m %d %Y').strftime('%A')
+
+print p.upper()
