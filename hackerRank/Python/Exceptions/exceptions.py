@@ -1,3 +1,7 @@
+'''
+https://www.hackerrank.com/challenges/exceptions
+'''
+
 n= int(input())
 
 for i in range(n):
