@@ -42,12 +42,23 @@ red blue yellow red blue red yellow blank yellow
 
 a=raw_input().split()
 b=[]
-c={'orange':'red', 'orange':'yellow', 'green':'yellow', 'green':'blue', 'purple':'blue', 'purple':'red'}
-for i in (range(len(a))):
-	if (i==0 or i==(len(a)-1)):
-		b.append(a[i])
-	else:
-		if a[i]==a[i-1]:
-			b.append('blank')
-		else:
-			if a[i]==''
+basic=['red','blue','yellow']
+c={'redpurple':'blue', 'redorange':'yellow', 'bluegreen':'yellow', 'bluepurple':'red', 'yelloworange':'red', 'yellowgreen':'blue', 'blankred':'red', 'blankblue':'blue', 'blankyellow':'yellow'}
+for i in (range(len(a)-1)):
+    if (i==0):
+        b.append(a[i])
+        #print b
+    else:
+        if a[i]==b[i-1]:
+            b.append('blank')
+            #print b
+        else:
+            if (a[i] not in basic):
+                key=b[i-1]+a[i]
+                b.append(c[key])
+                #print b
+            else:
+                b.append(a[i])
+                #print b
+
+print ' '.join(map(str,b))
