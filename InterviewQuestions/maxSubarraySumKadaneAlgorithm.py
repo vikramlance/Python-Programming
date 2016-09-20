@@ -13,7 +13,6 @@ if p==n:
 else:
 	max_so_far=0
 	max_ending_here=0
-	flag=0
 	for i in range(n):
 		max_ending_here = max_ending_here+a[i] 
 		if max_ending_here<0:
