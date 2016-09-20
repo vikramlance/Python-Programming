@@ -1,6 +1,7 @@
 import random
 
-i=range(1,3)
+
+i=map (int, (raw_input().strip().split(' ')))
 print i
 
 j=len(i)
