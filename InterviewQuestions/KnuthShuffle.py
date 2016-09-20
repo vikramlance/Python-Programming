@@ -1,11 +1,14 @@
 import random
 
-i=range(1,20,2)
+i=range(1,3)
 print i
 
-for a in range(10):
-	b=random.randint(0, 9)
-	i[b], i[a] = i[a], i[b]
-
-
-print i
+j=len(i)
+print j
+if j < 2:
+	print i
+else:
+	for a in range(j):
+		b=random.randint(0,j-a)
+		i[b], i[a] = i[a], i[b]
+	print i
