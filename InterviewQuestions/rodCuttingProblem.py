@@ -20,3 +20,5 @@ price pipi	1	5	8	9	10	17	17	20
 #brute force
 
 a= {1:1,2:5,3:8,4:9,5:10,6:17, 7:17,8:20 }
+
+#calculate and save optimum price for given length of rod
