@@ -1,0 +1,11 @@
+1. in an array of consecutive integers (array is not sorted), there is one integer that is repeated. Find which one it is. (Try not to use if-else, and no new temp array)
+	Input: 9,1,5,3,7,9,2,10,4,8,6
+	output: 9
+
+2. An image is N x N pixel. Rotate the image by 90 degree (clockwise)
+
+3.  Given an array Ai  and a number N, rotate the array left by N places. Read the input to get array and N from the text file
+
+4. Given a string, print all the unique characters in the string in reverse order. Take input from the prompt screen and write output to a text file.
+	Ex: given: abbccccccdddddddeeeaaaaa
+		output: aedcba
