@@ -2,15 +2,19 @@ class stack:
 
     def __init__(self):
 
-        pass
+        self.elements=[]
 
-    def isEmpty(self,inputStack):
-        if inputStack==None:
-            return True
-        else:
-            return False
-    def size(self,inputStack):
-        return len(inputStack)
+    def isEmpty(self):
+        if self.elements==[]
+        
+    def size(self):
+        return len(self.elements)
 
-    def pushObject(self, inputStack, ob):
-        inputStack.append(ob)
+    def push(self,ob):
+        self.elements.append(ob)
+
+    def pop (self ):
+        return self.elements.pop()
+
+    def peek (self):
+        return self.elements[len(self.elements) - 1]
