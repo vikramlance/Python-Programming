@@ -1,6 +1,7 @@
 '''
 '''
 
+# Enter your code here. Read input from STDIN. Print output to STDOUT
 
 import itertools
 import re
@@ -22,4 +23,18 @@ spiralString= ''.join(list(itertools.chain(*transpose_and_yield_top(arr))))
 #replace consecutive # in spiralString
 newSpiralString= re.sub('#+','#',spiralString)
 
-print 1 + sum(1 for v in newSpiralString if v=='#')
+h= list(newSpiralString)
+
+if h[0]=='#':
+	
+	if h[len(h)-1]=='#':
+		print 1 + sum(1 for v in h[1:len(h)-1] if v=='#')
+		quit()
+	else:
+		print 1 + sum(1 for v in h[1:len(h)] if v=='#')
+		quit()
+if h[len(h)-1]=='#' and h[0] !='#':
+	print 1 + sum(1 for v in h[:len(h)-1] if v=='#')
+	quit()
+
+print 1 + sum(1 for v in h if v=='#')
