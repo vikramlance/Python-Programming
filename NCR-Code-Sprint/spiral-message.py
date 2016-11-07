@@ -1,8 +1,6 @@
 '''
 '''
 
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-
 import itertools
 import re
 
@@ -25,6 +23,9 @@ newSpiralString= re.sub('#+','#',spiralString)
 
 h= list(newSpiralString)
 
+if h==['#']:
+    print 0
+    quit()
 if h[0]=='#':
 	
 	if h[len(h)-1]=='#':
