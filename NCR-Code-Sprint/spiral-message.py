@@ -1,4 +1,5 @@
 '''
+Refer pdf for the problem statement.
 '''
 
 import itertools
