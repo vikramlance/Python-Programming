@@ -1,3 +1,7 @@
+'''
+
+'''
+
 a=raw_input()
 n=len(a)
 # use stack for checking if given string is palindrome
