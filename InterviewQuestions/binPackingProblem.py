@@ -4,6 +4,7 @@ I am developing a solution for bin packing problem now need help in optimizing i
 2. I have 10 buckets sizes as followed: 700, 700, 1440, 1440, 2700, 2700, 2700, 2700, 2700, 2700
 
 Now how i will select the buckets where my empty spaces will be lowest. My code is now able to select 2*2700 and one 700 bucket
+
 '''
 from itertools import combinations
 
