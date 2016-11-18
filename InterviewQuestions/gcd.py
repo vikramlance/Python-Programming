@@ -1,29 +1,17 @@
 
-
-a=5
+a=21
 b=56
-if b>a:
-    temp=a
-    a=b
-    b=temp
-
 
 def gcd(a,b):
-    if a==b:
-        print "hi"
-        return a
-    if a>b:
-        print "hi bi"
-        print a
-        print b
-        gcd(a-b,b)
-
-    else:
-        if b%a==0:
-            print "hi m"
-            return a
+    if a>=b:
+        if (a%b==0) or (b==1):
+            print b
         else:
-            return 1
+            gcd(a-b,b)
+    else:
+        if (b%a==0) or (a==1):
+            print a
+        else:
+            gcd(b-a,a)
 
-k= gcd(a,b)
-print k
+gcd(a,b)
