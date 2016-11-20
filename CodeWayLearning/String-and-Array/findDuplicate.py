@@ -3,6 +3,7 @@
 (Try not to use if-else, and no new temp array)
 	Input: 9,1,5,3,7,9,2,10,4,8,6
 	output: 9
+functions are used, needs to compute the time complexity
 '''
 
 class duplicateNumeber:
