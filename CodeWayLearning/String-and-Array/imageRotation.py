@@ -1,3 +1,7 @@
+'''
+rotate matrix by ninty degrees
+'''
+
 class ImageRotation:
     def __init__(self, inputMatirx):
         self.inputMatirx = inputMatirx
