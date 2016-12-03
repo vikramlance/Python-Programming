@@ -1,3 +1,7 @@
+'''
+https://www.hackerrank.com/challenges/mini-max-sum
+'''
+
 #!/bin/python
 
 import sys
