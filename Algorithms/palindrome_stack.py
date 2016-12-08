@@ -1,5 +1,5 @@
 '''
-
+Find if given string is palindrome or not.
 '''
 
 a=raw_input()
