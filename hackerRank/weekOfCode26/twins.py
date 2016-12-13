@@ -10,6 +10,7 @@ output
 4161
 '''
 
+
 import math
 
 n,m = raw_input().split()
@@ -17,6 +18,7 @@ n=int(n)
 m=int(m)
 primes = []
 def prime(n):
+    
     if n in primes:
         return "YES"        
     for i in range (2,int(n**0.5) + 1):
@@ -29,7 +31,16 @@ def prime(n):
 count=0
 if n%2==0:
     n=n+1
-for i in range(n,m-1,2):
-    if prime(i)=='YES' and prime(i+2)=='YES':
-        count+=1
+    
+if n>=5:
+    for i in range(n,m-1,2):
+        if (i + 1)%6== 0:
+            if prime(i)=='YES' and prime(i+2)=='YES':
+                count+=1
+else:
+    for i in range(n,m-1,2):
+        if prime(i)=='YES' and prime(i+2)=='YES':
+            count+=1
 print count
+
+
