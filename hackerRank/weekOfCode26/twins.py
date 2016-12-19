@@ -4,7 +4,7 @@ Problem statement is available in pdf file - Twins _ Week of Code 26 Question _ 
 input 
 9234567 9876543
 3875185 4608449
-
+----
 output
 3334
 4161
