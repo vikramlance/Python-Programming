@@ -1,6 +1,6 @@
 '''
 Problem statement is available in pdf file - Twins _ Week of Code 26 Question _ Contests _ HackerRank.pdf
-
+----
 input 
 9234567 9876543
 3875185 4608449
