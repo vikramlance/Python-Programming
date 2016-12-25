@@ -1,11 +1,11 @@
 '''
 Problem statement is available in pdf file - Twins _ Week of Code 26 Question _ Contests _ HackerRank.pdf
 ----
-input 
+input format
 9234567 9876543
 3875185 4608449
 ----
-output
+output format
 3334
 4161
 '''
