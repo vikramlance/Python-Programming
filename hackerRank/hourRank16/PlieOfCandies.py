@@ -13,6 +13,13 @@ input
 
 output
 20 1
+
+input 
+9
+10 4 10 20 20 30 30 7 8
+
+output
+7 1
 '''
 
 
