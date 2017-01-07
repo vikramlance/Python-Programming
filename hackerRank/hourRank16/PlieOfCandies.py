@@ -1,4 +1,6 @@
 '''
+problem statement
+https://www.hackerrank.com/contests/hourrank-16/challenges/pile-of-candies
 
 input
 100
@@ -21,5 +23,28 @@ input
 output
 7 1
 '''
+
+#!/bin/python
+import sys
+
+n = int(raw_input().strip())
+c = map(int, raw_input().strip().split(' '))
+
+c.sort()
+
+mini = c[0]
+if n>1:
+    happiness_list= [(2*mini),(c[1])]
+    happiness = min(happiness_list)
+    if (2*mini) > (c[1]) and c.count(mini) > 1:
+        count= n
+    else:
+        count = c.count(mini)
+else:
+    happiness = 2*mini
+    count=n
+
+print (str(happiness)+" "+str(count))
+
 
 
