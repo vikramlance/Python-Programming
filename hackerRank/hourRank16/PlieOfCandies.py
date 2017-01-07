@@ -6,6 +6,13 @@ input
 
 output
 13 100
+
+input
+1
+10
+
+output
+20 1
 '''
 
 
