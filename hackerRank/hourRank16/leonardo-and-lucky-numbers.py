@@ -1,5 +1,5 @@
 '''
-Problem statement:
+Problem statement can be found here:
 https://www.hackerrank.com/contests/hourrank-16/challenges/leonardo-and-lucky-numbers
 
 input 
