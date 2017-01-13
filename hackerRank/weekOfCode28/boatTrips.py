@@ -1,6 +1,7 @@
 '''
 problem statement:
 https://www.hackerrank.com/contests/w28/challenges/boat-trip
+
 '''
 
 #!/bin/python
