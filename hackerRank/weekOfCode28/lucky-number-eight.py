@@ -5,6 +5,11 @@ https://www.hackerrank.com/contests/w28/challenges/lucky-number-eight
 
 '''
 
+
+'''
+All possible combinations of string are taken for following code. 
+
+
 #!/bin/python
 
 import sys
@@ -31,3 +36,4 @@ for m in set(g):
         count+=1
         
 print ((count % ( (10**9) + 7 )) )
+'''
