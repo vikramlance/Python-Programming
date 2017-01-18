@@ -3,8 +3,11 @@ Problem statement:
 https://www.hackerrank.com/contests/w28/challenges/lucky-number-eight
 
 input 
+3
+968
 
 output
+3
 
 '''
 
