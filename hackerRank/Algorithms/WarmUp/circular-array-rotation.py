@@ -1,5 +1,5 @@
 '''
-
+need to modify for k > n
 '''
 
 #!/bin/python
