@@ -1,5 +1,6 @@
 '''
 Find if given string is palindrome or not.
+Below solution uses stack data structure to find if given string is palindrome or not.
 '''
 
 a=raw_input()
