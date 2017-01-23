@@ -1,9 +1,12 @@
 '''
 problem statement
+https://www.hackerrank.com/contests/w26/challenges/game-with-cells
 
 input 
+2 2
 
 output
+1
 '''
 
 #!/bin/python3
