@@ -1,5 +1,9 @@
 '''
 problem statement
+
+input 
+
+output
 '''
 
 #!/bin/python3
