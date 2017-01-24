@@ -1,5 +1,8 @@
 '''
 Problem statement is available in pdf file - Twins _ Week of Code 26 Question _ Contests _ HackerRank.pdf
+
+Problem statement:
+https://www.hackerrank.com/contests/w26/challenges/twins
 ----
 input format
 9234567 9876543
