@@ -5,8 +5,11 @@ problem statement:
 https://www.hackerrank.com/contests/w26/challenges/best-divisor
 
 input 
+12
 
 output
+6
+
 '''
 
 import sys
