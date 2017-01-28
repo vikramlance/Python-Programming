@@ -3,6 +3,7 @@ problem statement
 https://www.hackerrank.com/contests/w26/challenges/game-with-cells
 
 also problem statement can be found in pdf
+- Army Game _ Week of Code 26 Question _ Contests _ HackerRank.pdf
 
 input 
 2 2
