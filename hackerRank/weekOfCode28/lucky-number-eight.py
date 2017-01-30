@@ -8,7 +8,6 @@ input
 
 output
 3
-
 '''
 
 
