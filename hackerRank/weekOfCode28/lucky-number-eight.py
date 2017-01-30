@@ -35,7 +35,6 @@ for j in range(1,int(k)+1):
         g.append(z)
 count=0
 
-
 for m in set(g):
     if m%8==0 :
         count+=1
