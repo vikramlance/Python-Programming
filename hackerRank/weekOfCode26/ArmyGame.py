@@ -10,6 +10,7 @@ input
 
 output
 1
+
 '''
 
 #!/bin/python3
