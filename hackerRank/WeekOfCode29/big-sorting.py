@@ -4,8 +4,7 @@ https://www.hackerrank.com/contests/w29/challenges/big-sorting
 '''
 
 import sys
-
-
+#read the input 
 n = int(raw_input().strip())
 unsorted = []
 unsorted_i = 0
