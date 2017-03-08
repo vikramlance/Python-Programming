@@ -1,3 +1,7 @@
+'''
+binary tree implementation
+'''
+
 #!/usr/bin/python
 
 class Node:
