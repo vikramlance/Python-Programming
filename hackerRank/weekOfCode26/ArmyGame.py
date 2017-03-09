@@ -1,5 +1,5 @@
 '''
-problem statement
+problem statement can be found at below link
 https://www.hackerrank.com/contests/w26/challenges/game-with-cells
 
 also problem statement can be found in pdf
@@ -30,3 +30,4 @@ if (n%2 != 0) and (m%2 ==0):
 if (n%2 != 0) and (m%2 !=0):
     k =  (int(n/2))*(int(m/2)) + (int(n/2)) + (int(m/2)) + 1
 print (int(k))
+
