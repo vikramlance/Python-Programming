@@ -9,14 +9,11 @@ input
 
 output
 6
-
 '''
-
 import sys
 import math
 
 n = int(raw_input().strip())
-
 
 def divisorGenerator(n):
     large_divisors = []
@@ -30,8 +27,6 @@ def divisorGenerator(n):
 
 k= list(divisorGenerator(n))
 
-
-    
 def sum_digits3(n):
    r = 0
    while n:
@@ -48,6 +43,5 @@ for i in k:
     if m == oldm and best > i:
         best = i
         oldm= m
-
 
 print (best)
