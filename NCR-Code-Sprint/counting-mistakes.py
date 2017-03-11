@@ -3,9 +3,7 @@ refer pdf doc for problem statement
 '''
 
 #!/bin/python
-
 import sys
-
 
 n = int(raw_input().strip())
 starList= map(int, raw_input().split())
