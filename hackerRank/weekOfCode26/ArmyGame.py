@@ -1,5 +1,5 @@
 '''
-problem statement can be found at below link
+problem statement can be found at below link. To understand the problem.
 https://www.hackerrank.com/contests/w26/challenges/game-with-cells
 
 also problem statement can be found in pdf
