@@ -1,26 +1,14 @@
 '''
-
+https://www.hackerrank.com/contests/w30/challenges/melodious-password
 
 '''
-
-
-import sys
-
 import string
-
 print string.ascii_lowercase
 
 
 import itertools
 # from itertools import
-
-print '[a-z]'
-
-
 #itertools.permutations(iterable[, r])
-
-
-
 from itertools import permutations
 
 #n = int(raw_input().strip())
