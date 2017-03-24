@@ -2,6 +2,7 @@
 https://www.hackerrank.com/contests/w30/challenges/melodious-password
 
 '''
+
 import string
 print string.ascii_lowercase
 
