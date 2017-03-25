@@ -18,8 +18,8 @@ vowel ='aeiou'
 for i in consonant:
   print i
 '''
-perms = [''.join(p) for p in itertools.permutations(iterable['stack', 2])]
-print perms
+combo_list = [''.join(p) for p in itertools.permutations(iterable['stack', 2])]
+print combo_list
 '''
 
 from itertools import product
@@ -27,3 +27,4 @@ from string import ascii_lowercase
 keywords = [''.join(i) for i in product(ascii_lowercase,repeat = 2)]
 
 #print keywords
+
