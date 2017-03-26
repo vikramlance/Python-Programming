@@ -12,7 +12,6 @@ output
 1
 
 '''
-
 #!/bin/python3
 
 import sys
@@ -30,4 +29,3 @@ if (n%2 != 0) and (m%2 ==0):
 if (n%2 != 0) and (m%2 !=0):
     k =  (int(n/2))*(int(m/2)) + (int(n/2)) + (int(m/2)) + 1
 print (int(k))
-
