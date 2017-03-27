@@ -23,9 +23,6 @@ Sample Output 2
 
 2
 '''
-
-
-
 #!/bin/python
 
 import re
