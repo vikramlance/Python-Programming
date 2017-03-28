@@ -34,7 +34,7 @@ def sum_digits3(n):
    return r
 
 best = 0
-oldm=0
+oldm = 0
 for i in k:
     m= sum_digits3(i)
     if m > oldm:
