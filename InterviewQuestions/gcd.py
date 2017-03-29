@@ -1,4 +1,8 @@
+'''
+Find GCD of two given numbers
 
+Given numbers 21 and 56 for example
+'''
 a=21
 b=56
 
