@@ -1,3 +1,8 @@
+'''
+print largest continous sequence of numbers in given array
+
+'''
+
 a=[45,4,1,5,6,7,2,8,23,43]
 
 b=sorted(a)
