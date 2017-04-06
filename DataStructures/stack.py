@@ -1,3 +1,7 @@
+'''
+Implementation of stack in python
+'''
+
 class stack:
 
     def __init__(self):
