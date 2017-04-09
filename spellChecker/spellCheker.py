@@ -1,3 +1,7 @@
+'''
+spell checker python implementation
+'''
+
 f = open("story.txt", 'r')
 story_string = f.read()
 
