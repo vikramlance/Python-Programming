@@ -9,6 +9,10 @@ input
 
 output
 6
+
+input
+
+output
 '''
 import sys
 import math
