@@ -1,5 +1,5 @@
 '''
-Find GCD of two given numbers
+Find GCD of two given numbers (can be extended to n numbers by just finding GD of 2 numbers at a time )
 
 Given numbers 21 and 56 for example
 '''
