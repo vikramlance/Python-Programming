@@ -1,5 +1,5 @@
 '''
-
+shuffle array randomly
 '''
 
 import random
