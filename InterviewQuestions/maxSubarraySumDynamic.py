@@ -1,3 +1,7 @@
+'''
+
+maximum subarray sum, dynamic programming
+'''
 a=map (int, (raw_input().strip().split(' ')))
 n=len(a)
 def MS(k):
