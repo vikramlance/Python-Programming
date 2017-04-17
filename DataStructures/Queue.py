@@ -1,3 +1,6 @@
+'''
+queue implementation in python
+'''
 class Queue:
     def __init__(self):
         self.elements=[]
