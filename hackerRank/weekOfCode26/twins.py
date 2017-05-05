@@ -6,6 +6,8 @@ https://www.hackerrank.com/contests/w26/challenges/twins
 ----
 input format
 9234567 9876543
+
+
 3875185 4608449
 ----
 output format
