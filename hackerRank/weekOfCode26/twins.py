@@ -13,7 +13,9 @@ input format
 output format
 3334
 4161
-56665
+
+
+
 ** for some test cases below code will not pass the time limit test and gets timed out on few of the hackerrank test cases
 
 '''
