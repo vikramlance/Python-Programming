@@ -20,8 +20,7 @@ def isSatisfiable(c1, c2, h1, h2):
         return "YES"
     else:
         return "NO"
-    # Complete this function
-
+ 
 # Return "YES" if all four conditions can be satisfied, and "NO" otherwise
 c1, c2, h1, h2 = raw_input().strip().split(' ')
 c1, c2, h1, h2 = [int(c1), int(c2), int(h1), int(h2)]
