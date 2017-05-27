@@ -2,13 +2,12 @@
 Problem statement link
 https://www.hackerrank.com/contests/hourrank-20/challenges/p-string
 '''
-
-
 #!/bin/python
 
 import sys
 
 def countSubs(s):
+    
     # Complete this function
 
 # Return the number of non-empty perfect subsequences mod 1000000007
