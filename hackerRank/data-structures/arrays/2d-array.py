@@ -7,7 +7,6 @@ https://www.hackerrank.com/challenges/2d-array
 
 import sys
 
-
 arr = []
 for arr_i in xrange(6):
     arr_temp = map(int,raw_input().strip().split(' '))
@@ -31,6 +30,8 @@ for i in range(4):
           sum=sum+arr[k][l]
     
     sum_new= sum
+    if i==0 and j==0 :
+      sum_old = sum
     if sum_new > sum_old :
       sum_old = sum_new
     # print "sum is %d" %(sum)
