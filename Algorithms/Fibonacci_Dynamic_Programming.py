@@ -1,6 +1,6 @@
 '''
 
-The Fibonacci numbers are the sequence of numbers defined by the linear recurrence equation
+The Fibonacci numbers are the sequence of numbers defined by the linear recurrence equation.
 
  F_n=F_(n-1)+F_(n-2) 	
 
