@@ -1,5 +1,5 @@
 '''
-refer pdf doc for problem statement
+refer pdf doc for problem statement.
 '''
 
 #!/bin/python
