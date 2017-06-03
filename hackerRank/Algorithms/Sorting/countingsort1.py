@@ -1,7 +1,5 @@
 '''
-
 https://www.hackerrank.com/challenges/countingsort1
-
 '''
 
 from collections import Counter
