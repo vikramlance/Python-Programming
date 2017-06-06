@@ -2,7 +2,7 @@
 problem statement can be found at below link. To understand the problem.
 https://www.hackerrank.com/contests/w26/challenges/game-with-cells
 
-also problem statement can be found in pdf
+also problem statement can be found in pdf file
 - Army Game _ Week of Code 26 Question _ Contests _ HackerRank.pdf
 
 input 
