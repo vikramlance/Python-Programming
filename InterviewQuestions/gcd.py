@@ -11,7 +11,7 @@ def gcd(a,b):
         if (a%b==0) or (b==1):
             print b
         else:
-            gcd(a-b,b)
+            gcd(a-b,b) # apply the property of gcd
     else:
         if (b%a==0) or (a==1):
             print a
