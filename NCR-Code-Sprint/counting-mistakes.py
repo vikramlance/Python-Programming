@@ -1,5 +1,7 @@
 '''
 refer pdf doc for problem statement.
+
+problem statement can be found at the following link
 '''
 
 #!/bin/python
