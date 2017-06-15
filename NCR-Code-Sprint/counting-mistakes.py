@@ -2,6 +2,8 @@
 refer pdf doc for problem statement.
 
 problem statement can be found at the following link
+
+https://www.hackerrank.com/contests/ncr-codesprint/challenges/counting-mistakes
 '''
 
 #!/bin/python
