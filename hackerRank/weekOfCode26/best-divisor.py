@@ -4,6 +4,7 @@ The probelem statement available in the pdf file - Best Divisor _ Week of Code 2
 problem statement:
 https://www.hackerrank.com/contests/w26/challenges/best-divisor
 
+
 input 
 12
 
