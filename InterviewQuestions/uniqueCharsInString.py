@@ -1,5 +1,7 @@
 '''
-check if string has all unique characters
+check if string has all unique characters and print if it is unique or not unique.
+
+
 '''
 
 a="abdnscf"
