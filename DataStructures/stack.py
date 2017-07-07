@@ -1,5 +1,5 @@
 '''
-Implementation of stack in python
+Implementation of stack in python basics
 '''
 
 class stack:
