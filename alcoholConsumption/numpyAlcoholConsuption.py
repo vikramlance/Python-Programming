@@ -1,3 +1,6 @@
+'''
+Alcohol consumption exercise from dataquest.io 
+'''
 import csv
 import numpy
 
