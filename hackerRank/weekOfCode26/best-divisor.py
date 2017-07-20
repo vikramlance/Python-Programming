@@ -1,11 +1,10 @@
 '''
 The probelem statement available in the pdf file - Best Divisor _ Week of Code 26 Question _ Contests _ HackerRank.pdf
 
-problem statement:
+problem statement can be found at the following link:
 https://www.hackerrank.com/contests/w26/challenges/best-divisor
 
-examples
-
+examples 
 
 input 
 12
