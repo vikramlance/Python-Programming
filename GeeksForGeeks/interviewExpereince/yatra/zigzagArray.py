@@ -21,6 +21,6 @@ print(array[((array_len - 1) / 2): (array_len)])
 
 for i in array[0: (array_len - 1) / 2]:
     for j in array[((array_len - 1) / 2): (array_len)]:
-        pass
+        
 
 
