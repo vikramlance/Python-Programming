@@ -19,8 +19,12 @@ print((array_len - 1) / 2)
 print(array[0: (array_len - 1) / 2])
 print(array[((array_len - 1) / 2): (array_len)])
 
+n =0
 for i in array[0: (array_len - 1) / 2]:
     for j in array[((array_len - 1) / 2): (array_len)]:
+        print (i)
+        print(j)
+        continue
         
 
 
