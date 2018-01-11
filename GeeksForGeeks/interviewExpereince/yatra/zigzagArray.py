@@ -19,16 +19,10 @@ print((array_len - 1) / 2)
 print(array[0: (array_len - 1) / 2])
 print(array[((array_len - 1) / 2): (array_len)])
 
-n =0
-for i in array[0: (array_len - 1) / 2]:
-    for j in array[((array_len - 1) / 2): (array_len)]:
-        if n%2 == 0:
-            print (i)
-        else:
-            print(j)
+new_array_first = array[0: (array_len - 1) / 2]
+new_array_last = array[((array_len - 1) / 2): (array_len)]
+n = 0
+for i in xrange(len(new_array_first)):
+    new_array_last.insert((2 * i + 1), new_array_first[i])
 
-        n = n +1
-        continue
-        
-
-
+print(new_array_last)
