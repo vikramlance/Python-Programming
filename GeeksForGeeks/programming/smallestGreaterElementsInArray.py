@@ -19,3 +19,9 @@ value in given array and no other
 array element is greater from 13 so
 at index 0 we fill '_'.
 """
+
+a = [6, 3, 9, 8, 10, 2, 1, 15, 7]
+
+b = []
+for i in a:
+    
