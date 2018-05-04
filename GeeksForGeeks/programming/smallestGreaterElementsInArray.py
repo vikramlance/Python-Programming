@@ -23,5 +23,17 @@ at index 0 we fill '_'.
 a = [6, 3, 9, 8, 10, 2, 1, 15, 7]
 
 b = []
+# m = [y for y in a if y <  x in a ]
+
+
 for i in a:
+  z = [y for y in a if i < y ]
+  if z:
+    z.sort()
+  else:
+    z =['_']
+  
+  b.append(z[0])
+
+print (b) # [7, 6, 10, 9, 15, 3, 2, '_', 8]
     
