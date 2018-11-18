@@ -12,5 +12,23 @@ Explanation: The answer is "b", with the length of 1.
 
 class longestSubstring():
 
-    
+    def longest_substring_without_rep(self, Input):
+        longest = ''
+        longest_temp = ''
+
+        for i in Input:
+            if i not in longest_temp:
+                longest_temp += i
+            else:
+                if len(longest) < len(longest_temp):
+                    longest = longest_temp
+                longest_temp = i
+
+        return len(longest)
+
+test = longestSubstring()
+
+print(test.longest_substring_without_rep("abcabcdbb"))
+
+print(test.longest_substring_without_rep("bbbbb"))
 
