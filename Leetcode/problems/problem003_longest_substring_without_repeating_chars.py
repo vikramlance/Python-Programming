@@ -31,4 +31,3 @@ test = longestSubstring()
 print(test.longest_substring_without_rep("abcabcdbb"))
 
 print(test.longest_substring_without_rep("bbbbb"))
-
