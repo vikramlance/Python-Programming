@@ -1,7 +1,8 @@
 import csv
 from collections import defaultdict
 
-# Create dictionary of file names as key and file data as value (list of dictionaries of values)
+# Create dictionary of file names as key and file data as value (list of dictionaries where each dictionary is line/record
+# of the file with keys as column names and values as caolumn value)
 # Example file_dict = {file_name1: [{'id': '1', 'col1': 'a', 'col2': 'b'}, {'id': '1', 'col1': 'c', 'col2': 'd'}]
 #                      file_name2: [{'id': '2', 'col1': 'p', 'col2': 'q'}, {'id': '2', 'col1': 'r', 'col2': 's'}]
 #                      }
