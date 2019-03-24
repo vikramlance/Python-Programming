@@ -5,7 +5,7 @@ class Solution:
         :type target: int
         :rtype: List[int]
         """
-        for i, _value in enumerate(nums):
+         
             if target - nums[i] in nums[i+1:] and i != nums.index(target - nums[i]):
                 return [i, nums.index(target - nums[i])]
 
