@@ -1,3 +1,5 @@
+"""Maximum pairwise product"""
+
 input1 = 10
 input2 = [2, 4, 5, 11, 9, 5, 2, 1, 8, 6, 1]
 
