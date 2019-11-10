@@ -32,13 +32,29 @@ class Solution:
 
         number_sum = str(number_sum)
         
-        l3 = ListNode()
-        l3.val = int(number_sum[2])
-        l4 = ListNode()
-        l3.next = l4 
-        l4.val = int(number_sum[1])
-        l5 = ListNode()
+        l3 = ListNode(int(number_sum[2]))
+        l4 = ListNode(int(number_sum[1]))
+        l5 = ListNode(int(number_sum[0]))
+        l3.next = l4
         l3.next.next = l5
-        l5.val = int(number_sum[0])
 
-        return l3
+        return l3.val, l3.next.val, l3.next.next.val
+
+
+out_solution = Solution()
+
+l1 = ListNode(2)
+l1_1 = ListNode(4)
+l1_2 = ListNode(3)
+l1.next = l1_1
+l1.next.next = l1_2
+
+l2 = ListNode(5)
+l2_1 = ListNode(6)
+l2_2 = ListNode(4)
+l2.next = l2_1
+l2.next.next = l2_2
+
+output = out_solution.addTwoNumbers(l1, l2)
+
+print(output)
