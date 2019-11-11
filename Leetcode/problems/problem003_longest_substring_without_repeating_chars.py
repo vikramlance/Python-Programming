@@ -10,24 +10,28 @@ Output: 1
 Explanation: The answer is "b", with the length of 1.
 """
 
-class longestSubstring():
-
-    def longest_substring_without_rep(self, Input):
-        longest = ''
-        longest_temp = ''
-
-        for i in Input:
-            if i not in longest_temp:
-                longest_temp += i
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        max_len = 0
+        max_str = ''
+        for i in range(len(s)):
+          lookup_str = ''
+          curr_str = ''
+          for j in s[i:]:
+            curr_str += j
+            if j in lookup_str:
+              if len(lookup_str) > max_len:
+                max_len = len(lookup_str) 
+                max_str = lookup_str
+              break
             else:
-                if len(longest) < len(longest_temp):
-                    longest = longest_temp
-                longest_temp = i
+              lookup_str += j
+              if len(lookup_str) > max_len:
+                max_len = len(lookup_str) 
+                max_str = lookup_str
+        return max_len
 
-        return len(longest)
-
-test = longestSubstring()
-
-print(test.longest_substring_without_rep("abcabcdbb"))
-
-print(test.longest_substring_without_rep("bbbbb"))
+input_list = ['aab', 'abcabdcca', 'bbbbbbb', '  ']   
+sol1 = Solution()
+for i in input_list:
+  print(sol1.lengthOfLongestSubstring(i))
