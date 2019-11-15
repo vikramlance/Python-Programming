@@ -13,16 +13,21 @@ Output: "bb"
 """
 s = 'klmnpqrs'
 
-def reverse(s):
-  char_list = list(s)
-  for i in range(len(s)):
-    temp_char = char_list.pop(-1)
-    char_list.insert(0, temp_char)
-  return ''.join(char_list)
+# def reverse(s):
+#   char_list = list(s)
+#   for i in range(len(s)):
+#     temp_char = char_list.pop(-1)
+#     char_list.insert(0, temp_char)
+#   return ''.join(char_list)
 
-print(reverse(s))
+# print(reverse(s))
 
-
+def is_palindrome(s) {    
+    n = len(s);
+    for i in range(n/2):
+        if (s[i] != s[n - i - 1]:
+            return False
+    return True;
 
 # def largest_palindromic_substr(input_str):
 #     """ First check each element in the string 
