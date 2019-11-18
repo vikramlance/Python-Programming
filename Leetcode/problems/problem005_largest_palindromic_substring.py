@@ -22,12 +22,13 @@ s = 'klmnpqrs'
 
 # print(reverse(s))
 
-def is_palindrome(s) {    
-    n = len(s);
-    for i in range(n/2):
-        if (s[i] != s[n - i - 1]:
+
+def is_palindrome(s):
+    n = len(s)
+    for i in range(n / 2):
+        if s[i] != s[n - i - 1]:
             return False
-    return True;
+    return True
 
 # def largest_palindromic_substr(input_str):
 #     """ First check each element in the string 
