@@ -30,6 +30,9 @@ def is_palindrome(s):
             return False
     return True
 
+def longest_palindromic_substring():
+    
+
 # def largest_palindromic_substr(input_str):
 #     """ First check each element in the string 
 #         for each element check if it is a starting element of a palindrome
