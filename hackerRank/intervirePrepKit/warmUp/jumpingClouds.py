@@ -50,7 +50,7 @@ def jumpingOnClouds(c):
     for i in range(num_clouds):
         if curr in (num_clouds - 2, num_clouds - 3):
             jumps = jumps + 1
-            continue
+            break
 
         if c[curr + 2] == 1:
             curr = curr + 1
