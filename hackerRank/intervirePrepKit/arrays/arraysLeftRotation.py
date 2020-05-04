@@ -22,7 +22,7 @@ def rotLeft(a, d):
 
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    # fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     nd = input().split()
 
@@ -34,5 +34,7 @@ if __name__ == '__main__':
 
     result = rotLeft(a, d)
 
-    fptr.write(' '.join(map(str, result)))
-    fptr.write('\n')
+    print(result)
+
+    # fptr.write(' '.join(map(str, result)))
+    # fptr.write('\n')

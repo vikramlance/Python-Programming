@@ -14,6 +14,34 @@ import sys
 
 
 def minimumBribes(q):
+    length_q = len(q)
+    bribe_count = 0
+    temp = []
+
+    for i in range(length_q):
+        if q[i] > i + 3:
+            return 'Too chaotic'
+
+        if q[i] == i + 2:
+            bribe_count = bribe_count + 1
+
+        if q[i] == i + 3:
+            bribe_count = bribe_count + 2
+
+        if i + 1 not in (q[i - 1], q[i - 2]):
+            temp.append(i + 1)
+
+        if q[i] in temp:
+            if temp.index(q[i]) > 2:
+                return 'Too chaotic'
+            if temp.index(q[i]) == 2:
+                bribe_count = bribe_count + 2
+            if temp.index(q[i]) == 1:
+                bribe_count = bribe_count + 1
+
+            temp.remove(q[i])
+
+    return bribe_count
 
 
 if __name__ == '__main__':
@@ -24,7 +52,6 @@ if __name__ == '__main__':
 
         q = list(map(int, input().rstrip().split()))
 
-        minimumBribes(q)
+        min_bribes = minimumBribes(q)
 
-    fptr.write(' '.join(map(str, result)))
-    fptr.write('\n')
+        print(min_bribes)
