@@ -4,6 +4,8 @@ https://www.hackerrank.com/challenges/crush/problem?h_l=interview&playlist_slugs
 """
 
 
+"""
+# below solution times out for few test cases but works correctly on other test cases.
 def arrayManipulation(n, queries):
     len_queries = len(queries)
     arr = [0] * n
@@ -34,3 +36,5 @@ if __name__ == '__main__':
     result = arrayManipulation(n, queries)
 
     print(result)
+
+"""
