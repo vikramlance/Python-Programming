@@ -4,8 +4,13 @@ https://www.hackerrank.com/challenges/ctci-ransom-note/problem?h_l=interview&pla
 """
 
 
-# Complete the checkMagazine function below.
 def checkMagazine(magazine, note):
+    for i in note:
+        if i in magazine:
+            magazine.remove(i)
+        else:
+            return 'No'
+    return 'Yes'
 
 
 if __name__ == '__main__':
@@ -19,4 +24,4 @@ if __name__ == '__main__':
 
     note = input().rstrip().split()
 
-    checkMagazine(magazine, note)
+    print(checkMagazine(magazine, note))
