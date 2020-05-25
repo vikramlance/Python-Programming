@@ -93,6 +93,26 @@ if __name__ == '__main__':
     ans = freqQuery(queries)
 
     print('\n'.join(map(str, ans)))
+
+
+4
+3 4
+2 1003
+1 16
+3 1
+
+
+10
+1 3
+2 3
+3 2
+1 4
+1 5
+1 5
+1 4
+3 2
+2 4
+3 2
 """
 import collections
 
@@ -125,9 +145,14 @@ def freqQuery(queries):
                 dictionary[x] -= 1
                 new_count = dictionary[x]
 
-        if old_count > 0:
-            if old_count in count_dictionary and new_count > 0:
-                dictionary[new_count] = dictionary.pop(old_count)
+        if old_count in count_dictionary:
+            count_dictionary[new_count] = count_dictionary.pop(old_count)
+        else:
+            count_dictionary[new_count] = 0
+
+        print("ppppp", old_count, new_count)
+        print("kkk", dictionary)
+        print("qqqqq", count_dictionary)
 
         if queries[i][0] == 3:
             frequency = queries[i][1]
