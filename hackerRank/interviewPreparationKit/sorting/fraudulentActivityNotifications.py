@@ -49,16 +49,21 @@ if __name__ == '__main__':
 """
 
 
-def median(arr):
-    med = 0
-    l = len(arr)
-    arr.sort()
-    if (l % 2) == 0:
-        med = (arr[int(l / 2)] + arr[int((l + 1) / 2)]) / 2
-    else:
-        med = arr[int((l - 1) / 2)]
+def median(lst):
+    n = len(lst)
+    s = sorted(lst)
+    return (sum(s[n // 2 - 1:n // 2 + 1]) / 2.0, s[n // 2])[n % 2] if n else None
 
-    return med
+# def median(arr):
+#     med = 0
+#     l = len(arr)
+#     arr.sort()
+#     if (l % 2) == 0:
+#         med = (arr[int(l / 2)] + arr[int((l + 1) / 2)]) / 2
+#     else:
+#         med = arr[int((l - 1) / 2)]
+
+#     return med
 
 
 def activityNotifications(expenditure, d):
