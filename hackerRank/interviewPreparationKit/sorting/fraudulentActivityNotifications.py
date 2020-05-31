@@ -47,11 +47,10 @@ if __name__ == '__main__':
 
     print(str(result) + '\n')
 """
-
-
-def median(lst):
-    n = len(lst)
-    s = sorted(lst)
+import bisect 
+def median(s):
+    n = len(s)
+    # s = sorted(lst)
     return (sum(s[n // 2 - 1:n // 2 + 1]) / 2.0, s[n // 2])[n % 2] if n else None
 
 # def median(arr):
@@ -69,12 +68,20 @@ def median(lst):
 def activityNotifications(expenditure, d):
     count = 0
     len_e = len(expenditure)
+    sorted_e = sorted(expenditure[0:d])
     for i in range(d, len_e):
         # print(i, expenditure[i - d:i], median(expenditure[i - d:i]))
-        if median(expenditure[i - d:i]) * 2 <= expenditure[i]:
-            count += 1
+        if i == d:
+            sorted_slice = sorted_e
+            if median(sorted_slice) * 2 <= expenditure[i]:
+                count += 1
+        else:
+            temp_list = sorted_slice[1:]
+            bisect.insort(temp_list, i)  
+            sorted_slice = temp_list
+            if median(temp_list) * 2 <= expenditure[i]:
+                count += 1
     return count
-
 
 if __name__ == '__main__':
 
