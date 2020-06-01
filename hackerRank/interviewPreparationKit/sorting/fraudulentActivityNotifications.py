@@ -46,8 +46,73 @@ if __name__ == '__main__':
     result = activityNotifications(expenditure, d)
 
     print(str(result) + '\n')
+
+
+--------------
+
+from collections import deque
+
+# Complete the activityNotifications function below.
+def activityNotifications(expenditure, d):
+   # k << d, n --> counting sort approach
+    k = max(expenditure)
+    historic_counts = [0] * (k+1)
+    trailing_history = deque([])
+    num_notifications = 0
+
+    for day in range(len(expenditure)):
+        if day >= d:
+            if expenditure[day] >= 2 * median(historic_counts, d):
+                num_notifications += 1
+
+            historic_counts[trailing_history.popleft()] -= 1
+
+        historic_counts[expenditure[day]] += 1
+        trailing_history.append(expenditure[day])
+
+    return num_notifications
+
+def median(idx_counts, d):
+    # if d is odd, the median is found at idx
+        # d_half_floored +1 = d//2 + 1
+    # if d is even, the median is the mean of elements
+        # at idcs d_half_floored and d_half_floored + 1
+    d_half_floored = d // 2
+    median_low = 0
+    median_high = 0
+    traversed_elements = idx_counts[0]
+
+    idx = 1
+    while traversed_elements <= d_half_floored:
+        median_high = idx
+        if traversed_elements < d_half_floored:
+            median_low = idx  # still too low
+
+        traversed_elements += idx_counts[idx]
+        idx += 1
+            
+    if d % 2 != 0:
+        return median_high  # d is odd
+    else:
+        return (median_low + median_high) / 2  # d is even
+
+if __name__ == '__main__':
+
+    nd = input().split()
+
+    n = int(nd[0])
+
+    d = int(nd[1])
+
+    expenditure = list(map(int, input().rstrip().split()))
+
+    result = activityNotifications(expenditure, d)
+
+    print(str(result) + '\n')
+
 """
 import bisect 
+import statistics
 
 def counting_sort(the_list):
     
@@ -88,6 +153,8 @@ def median(lst):
     s = counting_sort(lst)
     return (sum(s[n // 2 - 1:n // 2 + 1]) / 2.0, s[n // 2])[n % 2] if n else None
 
+
+
 # def median(arr):
 #     med = 0
 #     l = len(arr)
@@ -124,8 +191,8 @@ def activityNotifications(expenditure, d):
     count = 0
     len_e = len(expenditure)
     for i in range(d, len_e):
-        # print(i, expenditure[i - d:i], median(expenditure[i - d:i]))
-        if median(expenditure[i - d:i]) * 2 <= expenditure[i]:
+        # print(i, expenditure[i - d:i], median(expenditure[i - d:i]))  -- median(expenditure[i - d:i])
+        if statistics.median(expenditure[i - d:i]) * 2 <= expenditure[i]:
             count += 1
     return count
 
