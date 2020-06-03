@@ -125,6 +125,8 @@ def freqQuery(queries):
 
     count_dictionary = collections.defaultdict(lambda: 0)
 
+    frequency_dict = collections.defaultdict(lambda: 0)
+
     for i in range(len_queries):
         old_count = 0
         new_count = 0
@@ -137,6 +139,7 @@ def freqQuery(queries):
                 dictionary[j] = 1
 
             new_count = dictionary[j]
+            frequency_dict[new_count] += 1
 
         if queries[i][0] == 2 and queries[i][1] in dictionary:
             x = queries[i][1]
@@ -144,21 +147,22 @@ def freqQuery(queries):
                 old_count = dictionary[x]
                 dictionary[x] -= 1
                 new_count = dictionary[x]
+                frequency_dict[new_count] += 1
 
-        if old_count in count_dictionary:
-            count_dictionary[new_count] = count_dictionary.pop(old_count)
-        else:
-            count_dictionary[new_count] = 0
+        # if old_count in count_dictionary:
+        #     count_dictionary[new_count] = count_dictionary.pop(old_count)
+        # else:
+        #     count_dictionary[new_count] = 0
 
-        print("ppppp", old_count, new_count)
-        print("kkk", dictionary)
-        print("qqqqq", count_dictionary)
+        # print("ppppp", old_count, new_count)
+        # print("kkk", dictionary)
+        # print("qqqqq", count_dictionary)
 
         if queries[i][0] == 3:
             frequency = queries[i][1]
             frequency_match = 0
 
-            if frequency in count_dictionary:
+            if frequency in frequency_dict:
                 frequency_match = 1
 
             result.append(frequency_match)
