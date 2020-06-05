@@ -5,8 +5,11 @@ https://www.hackerrank.com/challenges/ctci-merge-sort/problem?h_l=interview&play
 
 
 def countInversions(arr):
-    for i in range(len(arr)):
-        pass
+    len_arr = len(arr)
+    for i in range(len_arr):
+        for j in range(i + 1, len_arr):
+            if arr[i] < arr[j]:
+                pass
 
 
 if __name__ == '__main__':
