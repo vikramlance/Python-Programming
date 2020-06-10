@@ -4,12 +4,25 @@ https://www.hackerrank.com/challenges/ctci-merge-sort/problem?h_l=interview&play
 """
 
 
+def is_sorted(input_array):
+    for i in range(len(input_array) - 1):
+        if input_array[i] > input_array[i + 1]:
+            return False
+    return True
+
+
 def countInversions(arr):
     len_arr = len(arr)
-    for i in range(len_arr):
-        for j in range(i + 1, len_arr):
-            if arr[i] < arr[j]:
-                pass
+    count = 0
+    while not is_sorted(arr):
+        for i in range(len_arr):
+            if arr[i] > arr[i + 1]:
+                temp = arr[i]
+                arr[i] = arr[i + 1]
+                arr[i + 1] = temp
+                count += 1
+
+    return count
 
 
 if __name__ == '__main__':
