@@ -75,21 +75,36 @@ if __name__ == '__main__':
 """
 
 
-def countInversions(arr):
-    len_arr = len(arr)
+def merge(arr, left, right):
+    i = 0
+    j = 0
     count = 0
-
-    # sorted_array = sorted(arr)
-    for i in range(len_arr):
-        while i != 0 and arr[i] < arr[i - 1]:
-            print("aaaaa", i, arr[i], arr[i - 1])
-            temp = arr[i]
-            arr[i] = arr[i - 1]
-            arr[i - 1] = temp
-            i -= 1
-            count += 1
-
+    while (i < len(left) or j < len(right)):
+        if i == len(left):
+            arr[i + j] = right[j]
+            j += 1
+        elif j == len(right):
+            arr[i + j] = left[i]
+            i += 1
+        elif left[i] <= right[j]:
+            arr[i + j] = left[i]
+            i += 1
+        else:
+            arr[i + j] = right[j]
+            count += len(left) - i
+            j += 1
     return count
+
+
+def countInversions(arr):
+    if len(arr) < 2:
+        return 0
+
+    m = int((len(arr) + 1) / 2)
+    left = arr[0: m]
+    right = arr[m: len(arr)]
+
+    return countInversions(left) + countInversions(right) + merge(arr, left, right)
 
 
 if __name__ == '__main__':
