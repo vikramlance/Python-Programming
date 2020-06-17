@@ -116,3 +116,106 @@ class Plane:
 
 
 ba = Plane()
+
+
+class Friend:
+    def __init__(self):
+        self.job = "None"
+
+    def getJob(self):
+        return self.job
+
+    def setJob(self, job):
+        self.job = job
+
+
+Alice = Friend()
+Bob = Friend()
+
+Alice.setJob("Carpenter")
+Bob.setJob("Builder")
+
+print(Bob.getJob())
+print(Alice.job)
+
+# python
+# import os
+# dir(os)
+
+
+class App:
+    def start(self):
+        print('starting')
+
+
+class App1:
+    def start1(self):
+        print('starting1')
+
+
+class Android(App, App1):
+    def getVersion(self):
+        print('Android version')
+
+
+app = Android()
+app.start()
+app.start1()
+app.getVersion()
+
+d = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5}
+iterable = d.keys()
+print(iterable)
+
+
+d = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5}
+iterable = d.keys()
+iterator = iter(iterable)
+print(iterator)
+print(next(iterator))
+print(next(iterator))
+
+items = ["one", "two", "three", "four"]
+iterator = iter(items)
+x = next(iterator)
+print(x)
+x = next(iterator)
+print(x)
+
+
+class Fruit:
+    name = 'Fruitas'
+
+    @classmethod
+    def printName(cls):
+        print('The name is:', cls.name)
+
+
+Fruit.printName()
+apple = Fruit()
+berry = Fruit()
+
+Fruit.printName()
+apple.printName()
+berry.printName()
+
+apple.name = "Apple"
+Fruit.printName()
+apple.printName()
+berry.printName()
+
+Fruit.name = "Apple"
+Fruit.printName()
+apple.printName()
+berry.printName()
+
+
+class Fruit:
+    name = 'Fruitas'
+
+    def printName(cls):
+        print('The name is:', cls.name)
+
+
+Fruit.printAge = classmethod(Fruit.printName)
+Fruit.printAge()
