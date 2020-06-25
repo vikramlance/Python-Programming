@@ -5,9 +5,10 @@ class Solution:
         :type target: int
         :rtype: List[int]
         """
-         
-            if target - nums[i] in nums[i+1:] and i != nums.index(target - nums[i]):
+
+            if target - nums[i] in nums[i + 1:] and i != nums.index(target - nums[i]):
                 return [i, nums.index(target - nums[i])]
+
 
 test_two_sum = Solution()
 
