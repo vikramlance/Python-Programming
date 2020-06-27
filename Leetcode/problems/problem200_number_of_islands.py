@@ -21,8 +21,10 @@ Input:
 00011
 
 Output: 3
-"""
-class solution:
+
+-------------------
+
+wrong answer
 
     def num_of_islands(self, grid):
         num_rows = len(grid)
@@ -49,6 +51,38 @@ class solution:
                     count += 1
 
         return count
+
+"""
+
+
+class solution:
+    def dfs(self, grid, x, y):
+        if x < 0 or x >= len(grid) or y < 0 or y >= len(grid[0]) or grid[x][y] == '0':
+            return 0
+
+        # sink the island so that we dont visit it again
+        grid[x][y] = '0'
+
+        self.dfs(grid, x + 1, y)
+        self.dfs(grid, x - 1, y)
+        self.dfs(grid, x, y + 1)
+        self.dfs(grid, x, y - 1)
+        return 1
+
+    def num_of_islands(self, grid):
+        num_rows = len(grid)
+        num_columns = len(grid[0]) if num_rows else 0
+
+        if not num_rows and not num_columns:
+            return 0
+        # count number of islands
+        num_of_islands = 0
+        for x in range(num_rows):
+            for y in range(num_columns):
+                if grid[x][y] == '1':
+                    num_of_islands += self.dfs(grid, x, y)
+
+        return num_of_islands
 
 
 grid = [['1', '1', '1', '1', '0'],
