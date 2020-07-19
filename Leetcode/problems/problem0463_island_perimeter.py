@@ -28,11 +28,25 @@ class solution:
         if not grid or not grid[0]:
             return 0
 
-        rows = len(grid)
-        columns = len(grid[0])
+        m = len(grid)
+        n = len(grid[0])
+        perimeter = 0
 
-        for i in range():
-            pass
+        for i in range(m):
+            for j in range(n):
+                if grid[i][j] == 1:
+                    perimeter + = 4
+                    if (i > 0):
+                        perimeter -= grid[i - 1][j]
+                    if (i < m - 1):
+                        perimeter -= grid[i + 1][j]
+                    if (j > 0):
+                        perimeter -= grid[i][j - 1]; 
+                    if (j < n - 1):
+                        perimeter -= grid[i][j + 1]; 
+
+        return perimeter
+
 
 
 
