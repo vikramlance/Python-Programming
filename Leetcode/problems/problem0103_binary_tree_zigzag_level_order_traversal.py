@@ -15,6 +15,9 @@ return its zigzag level order traversal as:
   [20,9],
   [15,7]
 ]
+
+TreeNode{val: 3, left: TreeNode{val: 9, left: None, right: None}, right: TreeNode{val: 20, left: TreeNode{val: 15, left: None, right: None}, right: TreeNode{val: 7, left: None, right: None}}}
+
 """
 
 from collections import deque 
