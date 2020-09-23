@@ -32,6 +32,8 @@ s contains only lower case English letters.
 
 ababccc
 
+"wwwzfvedwfvhsww"
+
 """
 
 class Solution:
@@ -39,25 +41,37 @@ class Solution:
         temp_list = []
         i = 0
         while i < len(s):
+            # if s[i] is not in temp list then add it
             if s[i] not in temp_list:
+                print("hhhhhhhh",s[i])
                 temp_list.append(s[i])
                 i += 1
-            # find item with minimum lengh in temp_list and append s[i] to it and see if its unique repeat if not
+            # If s[i] is already present in temp list then build a string starting from i-1 and then add one char at a time
+            # and keep adding until we find unque string that is not present in temp list , remove old string on top of which 
+            # we created the string that we added to the temp list 
+
             else:
                 # temp_list.sort(key = len)
-                for j in range(len(s[i+1:])):
-                    if s[i:i+j+2] not in temp_list:
-                        temp_list.append(s[i:j])
-                        i = i + j +2
+                for j in range(len(s[i-1:])):
+                    print("bbbbbb",s[i-1:i+j+1])
+                    if s[i-1:i+j+1] not in temp_list:
+                        print("kkkkk", s[i-1:i+j+1])
+                        temp_list.remove(s[i-1:i+j])
+                        temp_list.append(s[i-1:i+j+1])
+                        i = i + j + 1
                         break
-        print(temp_list)
+                i = i + j + 1
+            print("aaaaa",i)
+            print(temp_list)
+        # print(temp_list)
         return len(temp_list)
-
 
 
 test = Solution()
 
 s = "ababccc"     
+
+# a ba b c cc
 
 print(test.maxUniqueSplit(s))
             
