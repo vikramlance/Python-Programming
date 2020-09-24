@@ -34,6 +34,8 @@ ababccc
 
 "wwwzfvedwfvhsww"
 
+ababccc
+
 """
 
 class Solution:
@@ -58,7 +60,7 @@ class Solution:
                         print("kkkkk", s[i-1:i+j+1])
                         temp_list.remove(s[i-1:i+j])
                         temp_list.append(s[i-1:i+j+1])
-                        i = i + j + 1
+                        i = i + j 
                         break
                 i = i + j + 1
             print("aaaaa",i)
@@ -69,7 +71,7 @@ class Solution:
 
 test = Solution()
 
-s = "ababccc"     
+s = "wwwzfvedwfvhsww"     
 
 # a ba b c cc
 
