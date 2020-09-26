@@ -42,11 +42,13 @@ class Solution:
     def maxUniqueSplit(self, s: str) -> int:
         temp_list = []
         i = 0
+        last_substring = ''
         while i < len(s):
             # if s[i] is not in temp list then add it
             if s[i] not in temp_list:
                 print("hhhhhhhh",s[i])
                 temp_list.append(s[i])
+                last_substring = s[i]
                 i += 1
             # If s[i] is already present in temp list then build a string starting from i-1 and then add one char at a time
             # and keep adding until we find unque string that is not present in temp list , remove old string on top of which 
@@ -54,14 +56,15 @@ class Solution:
 
             else:
                 # temp_list.sort(key = len)
-                for j in range(len(s[i-1:])):
-                    print("bbbbbb",s[i-1:i+j+1])
-                    if s[i-1:i+j+1] not in temp_list:
-                        print("kkkkk", s[i-1:i+j+1])
-                        temp_list.remove(s[i-1:i+j])
-                        temp_list.append(s[i-1:i+j+1])
-                        i = i + j 
+                for j in range(len(s[i:])):
+                    print("bbbbbb",s[i:i+j+1])
+                    if last_substring + s[i:i+j+1] not in temp_list:
+                        print("kkkkk", last_substring + s[i:i+j+1])
+                        temp_list.remove(last_substring)
+                        temp_list.append(last_substring + s[i:i+j+1])
+                        i = i + j + 1
                         break
+                temp_list.append(last_substring + s[i:])
                 i = i + j + 1
             print("aaaaa",i)
             print(temp_list)
