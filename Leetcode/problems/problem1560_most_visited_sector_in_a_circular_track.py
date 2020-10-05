@@ -5,7 +5,8 @@ class Solution:
         n sectors on circular track 
         rounds - list of marathons 
         
-        iterate through rounds and map sector visits count and increase the count .. find the top count
+        iterate through rounds and map sector visits count and increase the count. 
+find the top count.
         
         [1,3,1,2]
         1 to 3
