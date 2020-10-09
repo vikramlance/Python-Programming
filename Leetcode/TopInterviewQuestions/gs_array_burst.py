@@ -35,7 +35,6 @@ def array_burst(input_str, burst_len):
     result = ''
     temp = ''
 
-
     for i in range(len(input_str)):
         curr = input_str[i]
 
@@ -51,7 +50,6 @@ def array_burst(input_str, burst_len):
                 result = result + curr
             elif i == len(input_str) -1:
                 result = result[:len(result) -1]
-
         else:
             if not flag and len(temp) > 1:
                 result = result + temp[1:] + curr
