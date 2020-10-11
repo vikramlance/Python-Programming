@@ -24,3 +24,5 @@ def ten_run(arr):
 print(ten_run([2, 10, 3, 4, 20, 5]))
 print(ten_run([10, 1, 20, 2]))
 print(ten_run([10, 1, 9, 20]))
+
+
