@@ -26,8 +26,9 @@ TreeNode{val: 3, left: TreeNode{val: 9, left: None, right: None}, right: TreeNod
 #         self.left = left
 #         self.right = right
 from collections import deque 
-class zigzag_traversal_solution:
-    def traverse_zigzag(self, arr):
+class Solution:
+    def zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]:
+
         result = []
         temp_queue = deque()
         temp_queue.append(arr[0])
