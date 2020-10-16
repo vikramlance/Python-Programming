@@ -78,7 +78,7 @@ class solution():
                 top_count = len(number_of_connected_roads[k])
                 top_city = k
         flag = 0
-        if second_top_city =! -1 and top_city =! -1:
+        if second_top_city != -1 and top_city != -1:
             if top_city in number_of_connected_roads[second_top_city]:
                 flag = 1
 
