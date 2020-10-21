@@ -1,0 +1,103 @@
+
+ssh
+username@machine:~$ ssh phoenixnap@185.52.53.222 –p7654 phoenixnap@185.52.53.222’s password:
+
+-- 
+
+$ django-admin startproject myproject
+
+ This will create a "myproject" folder with the following structure −
+
+$ python manage.py runserver
+
+$ python manage.py startapp myapp
+
+Before launching your server, to access your Admin Interface, you need to initiate the database −
+
+$ python manage.py migrate
+
+$ python manage.py createsuperuser
+
+$ python manage.py runserver
+And your admin interface is accessible at: http://127.0.0.1:8000/admin/
+
+$ python manage.py runserver 8080
+$ python manage.py runserver 0:8000
+
+
+
+---polls app 
+
+python -m django --version
+django-admin startproject mysite
+python manage.py runserver
+python manage.py runserver 8080
+python manage.py runserver 0:8000
+python manage.py startapp polls
+
+inside polls/views.py add html function 
+
+ inside polls/urls.py
+ polls.urls module. In mysite/urls.py,
+
+ from django.contrib import admin
+from django.urls import include, path
+
+urlpatterns = [
+    path('polls/', include('polls.urls')),
+    path('admin/', admin.site.urls),
+]
+
+
+python manage.py migrate
+
+change polls/models.py¶
+
+'polls.apps.PollsConfig'. Edit the mysite/settings.py file and add
+
+
+python manage.py makemigrations polls
+
+python manage.py migrate
+
+python manage.py shell
+
+
+-----------
+myproject/
+   manage.py
+   myproject/
+      __init__.py
+      settings.py
+      urls.py
+      wsgi.py
+
+The Project Structure
+The “myproject” folder is just your project container, it actually contains two elements −
+
+manage.py − This file is kind of your project local django-admin for interacting with your project via command line (start the development server, sync db...). To get a full list of command accessible via manage.py you can use the code −
+
+$ python manage.py help
+The “myproject” subfolder − This folder is the actual python package of your project. It contains four files −
+
+__init__.py − Just for python, treat this folder as package.
+
+settings.py − As the name indicates, your project settings.
+
+urls.py − All links of your project and the function to call. A kind of ToC of your project.
+
+wsgi.py − If you need to deploy your project over WSGI.
+
+
+Get the Project to Know About Your Application
+At this stage we have our "myapp" application, now we need to register it with our Django project "myproject". To do so, update INSTALLED_APPS tuple in the settings.py file of your project (add your app name) −
+
+INSTALLED_APPS = (
+   'django.contrib.admin',
+   'django.contrib.auth',
+   'django.contrib.contenttypes',
+   'django.contrib.sessions',
+   'django.contrib.messages',
+   'django.contrib.staticfiles',
+   'myapp',
+)
