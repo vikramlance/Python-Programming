@@ -1,1 +1,4 @@
 mistakes*
+node_modules*
+*.pyc
+note*
