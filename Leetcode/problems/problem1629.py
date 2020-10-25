@@ -57,10 +57,8 @@ class Solution:
             else:
                 release_time =  releaseTimes[i] -  releaseTimes[i-1]
             
-            if release_time > longest_time:
+            if release_time > longest_time or (release_time == longest_time and slowest_key < keysPressed[i] ):
                 longest_time = release_time
-                slowest_key = keysPressed[i]
-            if release_time == longest_time and slowest_key < keysPressed[i] :
                 slowest_key = keysPressed[i]
         
         return slowest_key
