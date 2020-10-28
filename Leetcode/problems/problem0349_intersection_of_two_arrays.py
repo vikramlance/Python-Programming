@@ -57,6 +57,16 @@ class solution:
                 intersection_list.append(i)
         return intersection_list
 
+    def intersection_2(self, nums1, nums2):
+
+        result = set()
+        nums1_set = set(nums1)
+        nums2_set = set(nums2)
+
+        for i in nums1_set:
+            if i in nums2_set:
+                result.add(i)
+        return list(result)
 
 nums1 = [1, 3, 4, 8]
 nums2 = [3, 4, 5, 8, 9, 2]
