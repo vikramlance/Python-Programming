@@ -60,5 +60,3 @@ class solution:
                     answer[i] = False
 
         return answer
-
-
