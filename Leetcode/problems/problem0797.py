@@ -6,7 +6,8 @@ class Solution:
     def allPathsSourceTarget(self, graph): 
         result = []      
         path = [0]        
-        destination = len(graph) -1 
+        destination = len(graph) -1
+        visited = set() 
             
         def dfs(curr_node):
             # If current node is destination node then append path to result by copying path to new list
@@ -17,10 +18,13 @@ class Solution:
                         
             else:
                 # iterate over each node (vertex) in the list of current nodes neighbours
-                for v in graph[curr_node]:                    
-                    path.append(v)
-                    dfs(v)
-                    path.pop()
+                if curr_node not in visited:
+
+                    visited.add(curr_node)
+                    for v in graph[curr_node]:                    
+                        path.append(v)
+                        dfs(v)
+                        path.pop()
 
         dfs(0)
         return result
