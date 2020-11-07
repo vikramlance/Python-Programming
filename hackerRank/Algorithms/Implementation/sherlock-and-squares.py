@@ -11,12 +11,6 @@ if __name__ == '__main__':
         print int(k - n) + 1
 
 
-
-
-
-
-
-
 '''
 import math
 import itertools
