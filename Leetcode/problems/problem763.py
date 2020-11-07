@@ -47,6 +47,4 @@ class Solution:
                 start = j + 1
             
         return result
-        
-            
-        
+      
