@@ -31,7 +31,7 @@ The value of nodes is between 1 and 100.
 #         self.right = right
 
 class Solution:
-    def sumEvenGrandparent(self, root):
+    def sumEvenGrandparent_dfs(self, root):
         
         def dfs(curr_node, result):    
             if not curr_node:
@@ -64,6 +64,35 @@ class Solution:
         return output
 
 
+    def sumEvenGrandparent_bfs(self, root: TreeNode) -> int:
+        
+        from collections import deque
+        
+        q = deque()
+        q.appendleft(root)
+        
+        total = 0
+        while q:
+            node = q.pop()
+            
+            if node.val % 2 ==0:
+                if node.left and node.left.left:
+                    total += node.left.left.val
+                if node.left and node.left.right:
+                    total += node.left.right.val
+                if node.right and node.right.left:
+                    total += node.right.left.val
+                if node.right and node.right.right:
+                    total += node.right.right.val
+            
+            if node.left:
+                q.appendleft(node.left)
+            if node.right:
+                q.appendleft(node.right)
+                
+        return total        
+
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -89,4 +118,6 @@ t1 = TreeNode(val=6, left=t2, right=t3 )
 
 test = Solution()
 
-print(test.sumEvenGrandparent(t1))
+print(test.sumEvenGrandparent_dfs(t1))
+
+print(test.sumEvenGrandparent_bfs(t1))
