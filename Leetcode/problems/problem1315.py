@@ -64,7 +64,7 @@ class Solution:
         return output
 
 
-    def sumEvenGrandparent_bfs(self, root: TreeNode) -> int:
+    def sumEvenGrandparent_bfs(self, root):
         
         from collections import deque
         
