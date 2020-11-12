@@ -76,3 +76,4 @@ class Solution:
                     else:
                         curr_station += 1                    
         return -1
+        
