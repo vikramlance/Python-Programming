@@ -80,6 +80,9 @@ class Solution:
         stack = deque()
         stack.append((sr,sc))
 
+        i = [1, -1, 0, 0]
+        j = [0, 0, 1, -1]
+
         old_color = image[sr][sc]
         if old_color == newColor:
             return image
@@ -93,17 +96,26 @@ class Solution:
             
             image[x][y] = newColor 
 
+            
+            # add below conditions in less verbose syntax
 
-            if x + 1 < len(image) and image[x+1][y] == old_color:
-                stack.append((x+1,y))                   
+            # if x + 1 < len(image) and image[x+1][y] == old_color:
+            #     stack.append((x+1,y))                   
 
-            if x - 1 >= 0 and image[x-1][y] == old_color:
-                stack.append((x-1,y))    
+            # if x - 1 >= 0 and image[x-1][y] == old_color:
+            #     stack.append((x-1,y))    
 
-            if y + 1 < len(image[0]) and image[x][y+1] == old_color:
-                stack.append((x,y +1))    
+            # if y + 1 < len(image[0]) and image[x][y+1] == old_color:
+            #     stack.append((x,y +1))    
 
-            if y - 1 >= 0 and image[x][y -1] == old_color:
-                stack.append((x,y-1))          
+            # if y - 1 >= 0 and image[x][y -1] == old_color:
+            #     stack.append((x,y-1))         
+
+            for k in range(4):
+                _x = x + i[k]
+                _y = y + j[k]
+                if  0 <= _x < len(image) and 0 <= _y < len(image[0]) and image[_x][_y] == old_color:
+                    stack.append((_x,_y))
+
 
         return image      
