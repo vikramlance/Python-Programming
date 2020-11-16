@@ -1,5 +1,3 @@
-
-
 """
 Given a parentheses string s containing only the characters '(' and ')'. A parentheses string is balanced if:
 
@@ -51,16 +49,11 @@ class Solution:
     def minInsertions(self, s):
 
         from collections import deque
-
         stack = deque()
-
-
-        count = 0 
-        
+        count = 0         
         i = 0
         while i < len(s):
             if s[i] == '(':
-
                 stack.append(s[i])
                 i += 1
             # case when s[i] == ')' 
