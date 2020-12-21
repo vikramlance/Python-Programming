@@ -1,14 +1,6 @@
 """
 74. Search a 2D Matrix
-Medium
 
-2613
-
-184
-
-Add to List
-
-Share
 Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:
 
 Integers in each row are sorted from left to right.
