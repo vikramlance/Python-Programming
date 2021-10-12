@@ -1,16 +1,25 @@
 from xlrd import *
 import win32com.client
-import csv
-import sys
+import os
+
 
 xlApp = win32com.client.Dispatch('Excel.Application')
-# print('Excel library version:', xlApp.Version)
+# read password of excel file from password.txt (warning: this will pick last line in tex file as a passwd)
+with open('password.txt') as f:
+    for line in f:
+        passwd = line
 
-xlwb = xlApp.Workbooks.Open(r'samplePasswordProtected.xlsx', False, True, None, 'abc')
+path = os.path.abspath('samplePasswordProtected.xlsx')
+xlwb = xlApp.Workbooks.Open(path, False, True, None, passwd)
 
-print(xlwb)
+exclsheet = xlwb.Sheets(1)
 
-for i in xlwb:
-    print(i)
+lastCol = exclsheet.UsedRange.Columns.Count
+print("The last comlumn number is %r" % lastCol)
+
+headers = []
+for r in range(1, lastCol + 1):
+    headers.append(exclsheet.Cells(1, r).Value)
+print(headers)
 
 print('End of file processing.')
