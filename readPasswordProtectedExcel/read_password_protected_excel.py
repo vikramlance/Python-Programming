@@ -1,3 +1,6 @@
+"""
+This program will run on windows, might not work on other OS.
+"""
 from xlrd import *
 import win32com.client
 import os
