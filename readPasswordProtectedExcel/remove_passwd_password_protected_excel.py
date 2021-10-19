@@ -15,14 +15,9 @@ with open('password.txt') as f:
 path = os.path.abspath('samplePasswordProtected.xlsx')
 xlwb = xlApp.Workbooks.Open(path, False, True, None, passwd)
 
-exclsheet = xlwb.Sheets(1)
+output_path = os.path.abspath('samplePasswordProtected2.xlsx')
+xlwb.SaveAs(output_path, None, '', '')
 
-lastCol = exclsheet.UsedRange.Columns.Count
-print("The last comlumn number is %r" % lastCol)
-
-headers = []
-for r in range(1, lastCol + 1):
-    headers.append(exclsheet.Cells(1, r).Value)
-print(headers)
+xlApp.Quit()
 
 print('End of file processing.')
