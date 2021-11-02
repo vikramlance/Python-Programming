@@ -5,4 +5,4 @@ list_of_filenames = os.listdir("./test")
 
 for file in list_of_filenames:
 
-    os.rename("./test/" + file, ("./test/" + file).replace('~', '_'))
+    os.rename("./test/" + file, ("./test/" + file).replace('_', '~'))
